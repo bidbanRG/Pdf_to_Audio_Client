@@ -1,0 +1,891 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"v",
+				"ATOMIC_VAR_INIT"
+			],
+			[
+				"uni",
+				"unique"
+			],
+			[
+				"max",
+				"max_element"
+			],
+			[
+				"remo",
+				"removeChild"
+			],
+			[
+				"P",
+				"PIECE"
+			],
+			[
+				"pie",
+				"piecolor"
+			],
+			[
+				"ha",
+				"hawal"
+			],
+			[
+				"to",
+				"toString"
+			],
+			[
+				"parse",
+				"parseInt"
+			],
+			[
+				"al",
+				"alignContent"
+			],
+			[
+				"Align",
+				"alignItems"
+			],
+			[
+				"Boa",
+				"BOARD"
+			],
+			[
+				"getEle",
+				"getElementsByTagName"
+			],
+			[
+				"quer",
+				"querySelector"
+			],
+			[
+				"getE",
+				"getElementsByClassName"
+			],
+			[
+				"child",
+				"childElementCount"
+			],
+			[
+				"flex",
+				"flexDirection"
+			],
+			[
+				"b",
+				"backgroundColor"
+			],
+			[
+				"appe",
+				"appendChild"
+			],
+			[
+				"crea",
+				"createElement"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"sty",
+				"style"
+			],
+			[
+				"begi",
+				"beginend"
+			],
+			[
+				"d",
+				"divisors"
+			],
+			[
+				"se",
+				"second"
+			],
+			[
+				"p",
+				"pos"
+			],
+			[
+				"S",
+				"Sum"
+			],
+			[
+				"ma",
+				"max2"
+			],
+			[
+				"be",
+				"beginend"
+			],
+			[
+				"beg",
+				"beginend"
+			],
+			[
+				"V",
+				"v_mx"
+			],
+			[
+				"Bi",
+				"BITS"
+			],
+			[
+				"ind",
+				"index_val"
+			],
+			[
+				"ch",
+				"char_max"
+			],
+			[
+				"M",
+				"MAX_SIZE"
+			],
+			[
+				"str",
+				"stars"
+			],
+			[
+				"st",
+				"stars"
+			],
+			[
+				"de",
+				"debug"
+			],
+			[
+				"pri",
+				"private"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"inde",
+				"index_array"
+			],
+			[
+				"fi",
+				"find_sum"
+			],
+			[
+				"po",
+				"possible"
+			],
+			[
+				"AS",
+				"ANS"
+			],
+			[
+				"co",
+				"common"
+			],
+			[
+				"fo",
+				"found_prime"
+			],
+			[
+				"a",
+				"accumulate"
+			],
+			[
+				"zer",
+				"zeros"
+			],
+			[
+				"In",
+				"Integer"
+			],
+			[
+				"pow",
+				"power"
+			],
+			[
+				"poe",
+				"power"
+			],
+			[
+				"sta",
+				"start_x"
+			],
+			[
+				"s",
+				"second_half"
+			],
+			[
+				"per",
+				"persons"
+			],
+			[
+				"conso",
+				"console_log"
+			],
+			[
+				"i",
+				"images"
+			],
+			[
+				"setI",
+				"setInterval"
+			],
+			[
+				"ti",
+				"timer"
+			],
+			[
+				"Math",
+				"Math_max"
+			],
+			[
+				"consol",
+				"console_log"
+			],
+			[
+				"We",
+				"Welcome_Glow"
+			],
+			[
+				"text",
+				"text-shadow"
+			],
+			[
+				"cons",
+				"console_log"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"te",
+				"text-shadow"
+			],
+			[
+				"q",
+				"querySelector"
+			],
+			[
+				"TE",
+				"Text_Glow"
+			],
+			[
+				"tr",
+				"transition"
+			],
+			[
+				"fl",
+				"flex-direction"
+			],
+			[
+				"l",
+				"link"
+			],
+			[
+				"no",
+				"none"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"li",
+				"li"
+			],
+			[
+				"trs",
+				"transition"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"tar",
+				"transition"
+			],
+			[
+				"bo",
+				"body"
+			],
+			[
+				"inner",
+				"innerHTML"
+			],
+			[
+				"fil",
+				"filter"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"bro",
+				"burlywood"
+			],
+			[
+				"ru",
+				"peru"
+			],
+			[
+				"re",
+				"rebeccapurple"
+			],
+			[
+				"int",
+				"int64"
+			],
+			[
+				"od",
+				"odd_count"
+			],
+			[
+				"inc",
+				"include1"
+			],
+			[
+				"odd",
+				"odd_count"
+			],
+			[
+				"eve",
+				"even"
+			],
+			[
+				"debu",
+				"debug"
+			],
+			[
+				"an",
+				"answer"
+			],
+			[
+				"f",
+				"find_any_solution"
+			],
+			[
+				"va",
+				"val"
+			],
+			[
+				"up",
+				"upper_bound"
+			],
+			[
+				"vl",
+				"value"
+			],
+			[
+				"nee",
+				"need_zeros"
+			],
+			[
+				"have",
+				"have_one"
+			],
+			[
+				"need",
+				"need_one"
+			],
+			[
+				"g",
+				"groove"
+			],
+			[
+				"ob",
+				"object-fit"
+			],
+			[
+				"backgr",
+				"background-position"
+			],
+			[
+				"backgro",
+				"background-image"
+			],
+			[
+				"setT",
+				"setTimeout"
+			],
+			[
+				"sl",
+				"slide"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"mr",
+				"margin-top"
+			],
+			[
+				"objec",
+				"object-position"
+			],
+			[
+				"paddi",
+				"padding-bottom"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"pic",
+				"pic1"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"spa",
+				"space-around"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"poi",
+				"points"
+			],
+			[
+				"n",
+				"nax"
+			],
+			[
+				"par",
+				"par_count"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"insert",
+					{
+						"characters": "jhkhjkhjk"
+					},
+					"CQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAFAAAAAAAAAAAAAAAFAAAAAAAAAAYAAAAAAAAAAAAAAAYAAAAAAAAABwAAAAAAAAAAAAAABwAAAAAAAAAIAAAAAAAAAAAAAAAIAAAAAAAAAAkAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2,
+					10,
+					"left_delete",
+					null,
+					"CQAAAAgAAAAAAAAACAAAAAAAAAABAAAAawcAAAAAAAAABwAAAAAAAAABAAAAagYAAAAAAAAABgAAAAAAAAABAAAAaAUAAAAAAAAABQAAAAAAAAABAAAAawQAAAAAAAAABAAAAAAAAAABAAAAagMAAAAAAAAAAwAAAAAAAAABAAAAaAIAAAAAAAAAAgAAAAAAAAABAAAAawEAAAAAAAAAAQAAAAAAAAABAAAAaAAAAAAAAAAAAAAAAAAAAAABAAAAag",
+					"AQAAAAAAAAABAAAACQAAAAAAAAAJAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"termi",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"te",
+				"Terminus: Close"
+			],
+			[
+				"",
+				"UI: Select Color Scheme"
+			],
+			[
+				"colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: template <typename ${1:_InputIter}>"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"c++ ",
+				"Set Syntax: C++"
+			],
+			[
+				"Set ",
+				"Set Syntax: C++"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 214.0,
+		"history":
+		[
+			"C:",
+			"clear",
+			"../",
+			"cd desktop",
+			"clear",
+			"cls",
+			"cd desktop"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/my_web/node/DOM manipulation/chess.html",
+		"/D/my_web/node/DOM manipulation/auto.js",
+		"/D/codeforces/_banRG_.cpp",
+		"/D/my_web/Neta's project/index.html",
+		"/D/my_web/Neta's project/Home-Maneger.js",
+		"/D/my_web/node/DOM manipulation/app.js",
+		"/D/project/facebook-clone/src/Header.js",
+		"/D/codeforces/bads.cpp",
+		"/D/codeforces/time_test.cpp",
+		"/D/codeforces/Centroid-Decomposition.cpp",
+		"/D/codeforces/bideshbanerjee444.cpp",
+		"/D/codeforces/subcpp/Print.java",
+		"/D/codeforces/subcpp/codeforces.cpp",
+		"/D/codeforces/disjoint_set.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/codeforces/disjoint_set.cpp",
+		"/C/Users/Bidisha Banerjee/AppData/Local/Sublime Text Build 3211 x64/Data/Packages/Atomizr/Atomizr.sublime-settings",
+		"/C/Users/Bidisha Banerjee/Desktop/codeforces/subcpp/Bob.java",
+		"/C/Users/Bidisha Banerjee/Desktop/codeforces/bokla.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/codeforces/_banRG_.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/my_web/node/DOM manipulation/app.js",
+		"/C/Users/Bidisha Banerjee/Desktop/my_web/node/DOM manipulation/mail.php",
+		"/C/Users/Bidisha Banerjee/Desktop/my_web/node/DOM manipulation/DOM2.html",
+		"/C/Users/Bidisha Banerjee/Desktop/codeforces/bideshbanerjee444.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/codeforces/bads.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/my_web/node/DOM manipulation/head-image.jpg",
+		"/C/Users/Bidisha Banerjee/Desktop/my_web/node/DOM manipulation/auto.js",
+		"/C/Users/Bidisha Banerjee/Desktop/my_web/node/DOM manipulation/getloc.js",
+		"/C/Users/Bidisha Banerjee/Desktop/codeforces/bads.cpp -run",
+		"/C/Users/Bidisha Banerjee/Desktop/codeforces/cpp files/MinGW/include/opencv/sources/3rdparty/openexr/Imath/ImathMatrixAlgo.h",
+		"/C/Users/Bidisha Banerjee/Desktop/my_web/Neta's project/index.html",
+		"/C/Users/Bidisha Banerjee/Desktop/my_web/node/DOM manipulation/DOM1.html",
+		"/C/Users/Bidisha Banerjee/Desktop/my_web/Neta's project/style.css",
+		"/C/Users/Bidisha Banerjee/Desktop/my_web/Neta's project/welcome.js",
+		"/C/Users/Bidisha Banerjee/Desktop/my_web/node/hello.js",
+		"/C/Users/Bidisha Banerjee/Desktop/codeforces/bideshbanerjee444.cpp -run",
+		"/C/Users/Bidisha Banerjee/Desktop/Neta's project/index.html",
+		"/C/Users/Bidisha Banerjee/Desktop/Neta's project/style.css",
+		"/C/Users/Bidisha Banerjee/Desktop/Nightchillins/style2.css",
+		"/C/Users/Bidisha Banerjee/Desktop/Neta's project/lawra.html",
+		"/C/Users/Bidisha Banerjee/Desktop/Neta's project/func.js",
+		"/C/Users/Bidisha Banerjee/Desktop/Nightchillins/index.html",
+		"/C/Users/Bidisha Banerjee/Desktop/codeforces/new.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/Nightchillins/Watch.html",
+		"/C/Users/Bidisha Banerjee/Desktop/Nightchillins/stylew.css",
+		"/C/Users/Bidisha Banerjee/Desktop/Nightchillins/web2JSfile.js",
+		"/C/Users/Bidisha Banerjee/Desktop/codeforces/bideshbanerjee444.exe",
+		"/C/Users/Bidisha Banerjee/Desktop/my_web/style2.css",
+		"/C/Users/Bidisha Banerjee/Desktop/my_web/web2.html",
+		"/C/Users/Bidisha Banerjee/Desktop/my_web/style.css",
+		"/C/Users/Bidisha Banerjee/Desktop/my_web/zweb.html",
+		"/C/Users/Bidisha Banerjee/Desktop/codeforces/temp1.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/codeforces/seg_tree.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/node/myweb.html",
+		"/C/Users/Bidisha Banerjee/Desktop/node/style.css",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/Bob.java",
+		"/C/Users/Bidisha Banerjee/Desktop/node/hello.js",
+		"/C/Users/Bidisha Banerjee/AppData/Local/Sublime Text Build 3211 x64/Data/Packages/User/JavaScript",
+		"/C/Users/Bidisha Banerjee/Desktop/codeforces/SS.js",
+		"/C/Users/Bidisha Banerjee/Desktop/codeforces/kotpractice.kt",
+		"/C/Users/Bidisha Banerjee/Desktop/codeforces/temp.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/abcd.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/A1.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/zweb.css",
+		"/C/Users/Bidisha Banerjee/Desktop/codeforces/A.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/codeforces/A",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/zweb.html",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/AtCo.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/a.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/nipisi.js",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/Print.java",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/new.java",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/Print.java -run",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/b.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/b.cpp -run",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/a.cpp -run",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/pogm.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/segment_trees.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/AtCod.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/cf.cpp",
+		"/C/Users/Bidisha Banerjee/Documents/forjava/Print.java",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/pog.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/normal.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/fff.java",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/cf.cpp -run",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/cog.cpp -run",
+		"/C/Users/Bidisha Banerjee/AppData/Local/Sublime Text Build 3211 x64/abcd.cpp -run",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/cog.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/algo.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/mog.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/code.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/cod.cpp -run",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/pogo.cpp -run",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/cip.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/subcpp/codeforces.cpp",
+		"/C/Users/Bidisha Banerjee/Desktop/cpp files/bidesh.cpp"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 121.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Content.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 389.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 187.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
