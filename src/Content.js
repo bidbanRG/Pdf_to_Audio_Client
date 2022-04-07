@@ -1,48 +1,70 @@
 import './App.css';
 import {useState,useRef,useEffect} from 'react';
-import Axios from "axios"; 
+import { useSpeechSynthesis } from "react-speech-kit";
+import { useSpeechRecognition } from 'react-speech-kit';
+
+import axios from "axios"; 
 
 function Content() {
     
-    const [AllUsers, setUser] = useState([]);
-    const texter = useRef();
+    const [msg, setmsg] = useState([]);
+    const [Ans,setAns] = useState({});
+  const { speak } = useSpeechSynthesis();
     const username = useRef();
-    
-      useEffect(() =>{
-          Axios.get("http://localhost:3001").then((response) => {
-              setUser(response.data);
-          })},[AllUsers]);  
-   
+    const [value, setValue] = useState('');
+      const { listen, listening, stop } = useSpeechRecognition({
+    onResult: (result) => {
+      setValue(result);
+    },
+  });
+      // useEffect(() =>{
+      //   console.log('in');
+      //     Axios.get("https://serverlkjhckl.herokuapp.com/input").then((response) => {
+      //         setmsg(response.data);
+      //         console.log(response.data);
+      //     }).catch((err)=>{console.log(err)})},[]);  
+      const [pdf,setpdf] = useState(null);
+      const [Text,setText] = useState(null); 
   return (
     <div className = "content">
          <h2> content </h2>
         <h3 > Share your words </h3>
-       {   
-             AllUsers.map((user) => {
-                 return (
-                  <div>
-                    <h3> Name: {user.name} </h3>
-                    <h4> Comment:  {user.comment} </h4>
-                       <button> Delete </button>
-                  </div>
-                 );
-             })
-       }               
- <input ref = {username} placeholder = "Name..." />      
-<textarea ref = {texter} style = {textareastyles} placeholder = "comment..."/>
-    
+          
+{/* <input ref = {username} placeholder = "Choose between 1 - 100..." />      
+{/*<textarea ref = {texter} style = {textareastyles} placeholder = "comment..."/>
+*/}    
 
-<button type = "submit" onClick = {()=>{
-      const name = username.current.value;
-      const comment = texter.current.value;
-      username.current.value = "";
-      texter.current.value = "";
-      Axios.post("http://localhost:3001/send",{
-        name,
-        comment,
-      }).then((respose) => {alert("User created");});
-    }}> ADD </button>
+{/*<button type = "submit" onClick = {()=>{
+      const name = parseInt(username.current.value);
      
+      username.current.value = "";
+
+      axios.post("https://serverlkjhckl.herokuapp.com/send",{ name:name }).then((response) => {
+        console.log(response.data);
+            setAns(response.data)
+       }).catch((err)=>{console.log(err)});
+    }}> ADD </button>*/}
+  
+           <input type="file" onChange = {(e) => setpdf(e.target.files[0])}/>
+           <button onClick = { async () => {
+            if(pdf === null) return alert('No file choosen');
+               const formData = new FormData();
+               formData.append('PDF', pdf);
+               console.log(pdf);
+               try {
+               const res = await axios.post('https://pdf-text-server.herokuapp.com/post', formData);
+               console.log(res.data.text);
+               setText(res.data.text);
+             }catch(error) {alert(error.message)}
+           }}> send </button>
+
+           {Text ? 
+            <div> 
+              <button onClick = {() => speak({ text: Text })}> say </button>
+              <button onClick = {stop}> stop </button>
+              <button onClick = {listen}> listen </button> 
+           </div>: <div> </div>}
+
   </div>
   );
 }

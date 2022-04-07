@@ -14,11 +14,10 @@ export default function Header(){
     useEffect( ()=>{
           setTimeout(setshadow,1000);
           console.log("Hello!!");
-          return () =>{
-             setTimeout(1); 
-          }
-         
-    });
+         return ()=>{
+            clearTimeout(setshadow,1000);
+         }
+    },[ShadowColor]);
     
       
 
