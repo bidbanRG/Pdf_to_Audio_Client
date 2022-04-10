@@ -1,11 +1,12 @@
 import './App.css';
+import './style.css';
 import {useState,useRef,useEffect} from 'react';
 // import { useSpeechSynthesis } from "react-speech-kit";
 // import { useSpeechRecognition } from 'react-speech-kit';
   import Speech from 'react-speech';
 import axios from "axios"; 
 
-function Content() {
+export default function Content() {
      
    
   // const { speak } = useSpeechSynthesis();
@@ -13,25 +14,25 @@ function Content() {
     const [CharIndex,setCharIndex] = useState(0);
     const [PrevCharIndex,setPrevCharIndex] = useState(0);
     const [Rate, setRate] = useState(6);
-   const [pdf,setpdf] = useState(null);
+   const [Pdf,setPdf] = useState(null);
     const [Text,setText] = useState(null);
-     
+     const [loading,setloading] = useState(false);
    
 
     let utt = new SpeechSynthesisUtterance(Text);
   
-
+   
  
      utt.addEventListener('boundary' ,(e) => {
           setCharIndex(e.charIndex)
-           console.log(e.charIndex)
+           
      });
    
  
 
      
    
-    console.log(CharIndex);
+  
     const play = () => {
     
       if(speechSynthesis.paused || speechSynthesis.speaking)
@@ -39,7 +40,7 @@ function Content() {
 
 
            if(PrevCharIndex === 0) utt.text = Text;
-           utt.rate = 1;
+           utt.rate = Rate / 10;
            speechSynthesis.speak(utt);
           
         
@@ -59,29 +60,100 @@ function Content() {
 
 
 
- const speed = (rate) => {
+ const speed = (e) => {
 
-   
+  
 
      stop();
-
+   
     // setCopy(Text.substring( PrevCharIndex  + CharIndex));
-     console.log('charIndex',CharIndex);
-  
-    console.log('PrevCharIndex',PrevCharIndex);
+ 
     utt.text = Text.substring( PrevCharIndex  + CharIndex);
     setPrevCharIndex(PrevCharIndex + CharIndex);
-    setRate(rate);
+    setRate(e.target.value);
       
      play();
  }
   
-
+const getAudio = async () => {
+   if(Pdf === null) return alert('No file choosen');
+    if(!Pdf.type.includes('pdf')) {
+       setPdf(null);
+      return alert('file should be a pdf');
+    }
+               const formData = new FormData();
+               formData.append('PDF', Pdf);
+              
+          try {
+               setloading(true);
+                const res = await axios.post('https://pdf-text-server.herokuapp.com/post', formData);
+             
+               setText(res.data.text);
+               setloading (false);
+               setPdf(null);
+             }
+             catch(error) {alert(error.message)}
+    }
 
   return (
-    <div className = "content">
-         <h2> content </h2>
-        <h3 > Share your words </h3>
+   <div>
+        {loading && <Loader/>}    
+      <div className = "app">
+          <div className = "center">
+          
+            <div className = "pdf__input">
+              <input className = "input" type = "file" onChange = {(e) => setPdf(e.target.files[0])}/>
+           {Pdf ? "Pdf Selected" : "Select Pdf"}
+            </div>
+            {Text && 
+               <div className = "btns1">
+            <div className = "btns">
+             <div className = "btn" onClick = {play}> play </div>
+             <div className = "btn" onClick = {pause}> pause </div>
+             <div className = "btn" onClick = {stop}> stop </div>
+              </div>
+              <div className = "speed1">
+                    <div className = 'speed'> 
+                <input type = 'range' onChange = {speed}  min = '1' max = '10' value = '6'/>
+                </div>
+                       <div className = 'oper'> 0.25 </div>
+                       <div className = 'oper'> 0.75  </div>
+                       <div className = 'oper'> 1    </div>
+                       <div className = 'oper'> 1.25 </div>
+                    
+              </div>
+
+            </div>}
+            {Pdf && <div className = "get__audio" onClick = {getAudio}> Get Audio </div>}
+          </div>
+ 
+      
+  </div>
+    </div>
+  
+  );
+}
+ 
+function Loader(){
+  return (
+ <div className = "Load">   
+  <div className = "Load1">
+   <div className="middle">
+  <div className="bar bar1"></div>
+  <div className="bar bar2"></div>
+  <div className="bar bar3"></div>
+  <div className="bar bar4"></div>
+  <div className="bar bar5"></div>
+  <div className="bar bar6"></div>
+  <div className="bar bar7"></div>
+  <div className="bar bar8"></div>
+</div>
+</div>
+</div>
+  );
+}  
+ {/*<div className = "content">
+      
           
     
   
@@ -115,28 +187,4 @@ function Content() {
            
           </div>: <div> </div>}
 
-  </div>
-  );
-}
-  
-const Comments = (user) => {
-  return(
-    <div className = "card">
-        <h3> {user.name} </h3>
-        <h4>  {user.comment} </h4>
-    </div>
-  );
-}
-      export default Content;
-      const textareastyles = {
-          borderRadius: "10px",
-          outline: "none",
-          border:"node",
-          width:"60%",
-          marginBottom: "20px",
-          width: "40%"
-      };
-     const btn  = {
-         backgroundColor : "black",
-         color : "red"
-     }    
+  </div> */}
