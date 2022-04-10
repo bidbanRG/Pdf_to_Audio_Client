@@ -1,49 +1,89 @@
 import './App.css';
 import {useState,useRef,useEffect} from 'react';
-import { useSpeechSynthesis } from "react-speech-kit";
-import { useSpeechRecognition } from 'react-speech-kit';
-
+// import { useSpeechSynthesis } from "react-speech-kit";
+// import { useSpeechRecognition } from 'react-speech-kit';
+  import Speech from 'react-speech';
 import axios from "axios"; 
 
 function Content() {
-    
-    const [msg, setmsg] = useState([]);
-    const [Ans,setAns] = useState({});
-  const { speak } = useSpeechSynthesis();
+     
+   
+  // const { speak } = useSpeechSynthesis();
     const username = useRef();
-    const [value, setValue] = useState('');
-      const { listen, listening, stop } = useSpeechRecognition({
-    onResult: (result) => {
-      setValue(result);
-    },
-  });
-      // useEffect(() =>{
-      //   console.log('in');
-      //     Axios.get("https://serverlkjhckl.herokuapp.com/input").then((response) => {
-      //         setmsg(response.data);
-      //         console.log(response.data);
-      //     }).catch((err)=>{console.log(err)})},[]);  
-      const [pdf,setpdf] = useState(null);
-      const [Text,setText] = useState(null); 
+    const [CharIndex,setCharIndex] = useState(0);
+    const [PrevCharIndex,setPrevCharIndex] = useState(0);
+    const [Rate, setRate] = useState(6);
+   const [pdf,setpdf] = useState(null);
+    const [Text,setText] = useState(null);
+     
+   
+
+    let utt = new SpeechSynthesisUtterance(Text);
+  
+
+ 
+     utt.addEventListener('boundary' ,(e) => {
+          setCharIndex(e.charIndex)
+           console.log(e.charIndex)
+     });
+   
+ 
+
+     
+   
+    console.log(CharIndex);
+    const play = () => {
+    
+      if(speechSynthesis.paused || speechSynthesis.speaking)
+         return speechSynthesis.resume();
+
+
+           if(PrevCharIndex === 0) utt.text = Text;
+           utt.rate = 1;
+           speechSynthesis.speak(utt);
+          
+        
+       
+    }
+    const pause = () => {
+      if(speechSynthesis.speaking) speechSynthesis.pause();
+    }
+
+   const stop = () => {
+      speechSynthesis.resume();
+      speechSynthesis.cancel();
+   }
+
+
+
+
+
+
+ const speed = (rate) => {
+
+   
+
+     stop();
+
+    // setCopy(Text.substring( PrevCharIndex  + CharIndex));
+     console.log('charIndex',CharIndex);
+  
+    console.log('PrevCharIndex',PrevCharIndex);
+    utt.text = Text.substring( PrevCharIndex  + CharIndex);
+    setPrevCharIndex(PrevCharIndex + CharIndex);
+    setRate(rate);
+      
+     play();
+ }
+  
+
+
   return (
     <div className = "content">
          <h2> content </h2>
         <h3 > Share your words </h3>
           
-{/* <input ref = {username} placeholder = "Choose between 1 - 100..." />      
-{/*<textarea ref = {texter} style = {textareastyles} placeholder = "comment..."/>
-*/}    
-
-{/*<button type = "submit" onClick = {()=>{
-      const name = parseInt(username.current.value);
-     
-      username.current.value = "";
-
-      axios.post("https://serverlkjhckl.herokuapp.com/send",{ name:name }).then((response) => {
-        console.log(response.data);
-            setAns(response.data)
-       }).catch((err)=>{console.log(err)});
-    }}> ADD </button>*/}
+    
   
            <input type="file" onChange = {(e) => setpdf(e.target.files[0])}/>
            <button onClick = { async () => {
@@ -51,19 +91,29 @@ function Content() {
                const formData = new FormData();
                formData.append('PDF', pdf);
                console.log(pdf);
-               try {
+           
+             
+               
+                  try {
+                
                const res = await axios.post('https://pdf-text-server.herokuapp.com/post', formData);
                console.log(res.data.text);
-               setText(res.data.text);
+               setText(res.data.text); 
              }catch(error) {alert(error.message)}
+              
+             
+             
            }}> send </button>
 
            {Text ? 
-            <div> 
-              <button onClick = {() => speak({ text: Text })}> say </button>
-              <button onClick = {stop}> stop </button>
-              <button onClick = {listen}> listen </button> 
-           </div>: <div> </div>}
+             <div>
+            <div onClick = {play}> 
+            play
+          </div>
+           <div onClick = {pause}> pause </div>
+            <div onClick = {stop}> stop </div>
+           
+          </div>: <div> </div>}
 
   </div>
   );
